@@ -1,0 +1,51 @@
+$secondary: #bdbdbd99
+$secondaryStrong: #b1b1b1c4
+
+@mixin menu()
+    ul
+        display: flex
+        align-items: center
+
+        width: 100%
+
+        list-style: none
+
+        padding: 0
+        margin: 0
+
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+
+            width: 100%
+
+            text-decoration: none
+            color: antiquewhite
+
+            transition: .7s ease
+
+            &.active
+                background-color: Antiquewhite
+                color: black
+
+            &:hover:not(.active)
+                background-color: $secondaryStrong
+                color: black
+
+        li
+            float: left
+
+            text-transform: uppercase
+
+            padding: 5px
+
+            h3
+                padding: 0
+                margin: 0
+
+@mixin animaciones()
+    animation-duration: 40s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+    
