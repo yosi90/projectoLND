@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap')
+
 $secondary: #bdbdbd99
 $secondaryStrong: #b1b1b1c4
 
@@ -48,13 +50,13 @@ $secondaryStrong: #b1b1b1c4
     animation-duration: 40s
     animation-iteration-count: infinite
     animation-timing-function: linear
-    
+
 @mixin list()
     display: flex
     flex-flow: row wrap
 
     max-height: calc( 100vh - 300px )
-    
+
     color: black
     background-color: black
     border: 1px solid rgb(228, 208, 142)
@@ -77,13 +79,14 @@ $secondaryStrong: #b1b1b1c4
     .card
         height: 33px
 
-        border: 1px solid black
-        border-top-left-radius: 10px
-        border-top-right-radius: 10px
+        border: 1px solid antiquewhite
+        border-radius: 10px
 
         overflow: hidden
 
         transition: .7s ease
+
+        margin-bottom: 3px
 
         .header
             display: flex
@@ -92,7 +95,7 @@ $secondaryStrong: #b1b1b1c4
 
             max-height: 35px
 
-            background-color: rgb(185, 185, 185)
+            background-color: antiquewhite
 
             padding: 5px
 
@@ -113,6 +116,7 @@ $secondaryStrong: #b1b1b1c4
         &:hover
             height: 356px
 
+            padding-bottom: 10px
 
         img
             max-width: 223px
@@ -121,3 +125,32 @@ $secondaryStrong: #b1b1b1c4
 
     .open
         height: 356px
+
+.azul
+    background-color: blue
+
+.blanco
+    background-color: white
+
+.negro
+    background-color: black
+
+.rojo
+    background-color: red
+
+.verde
+    background-color: green
+
+.disabled
+    border: 1px solid black
+
+    &::after
+        content: ""
+
+        display: block
+        width: 21px
+        height: 21px
+
+        border-bottom: 3px solid black
+
+        transform: translateY(-7px) translateX(-9px) rotate(-55deg)
