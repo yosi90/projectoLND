@@ -65,7 +65,7 @@ main
     section
         display: flex
         flex-flow: row wrap
-        justify-content: center
+        justify-content: space-around
         align-items: center
 
         height: 100%
@@ -75,7 +75,7 @@ main
 
         overflow: scroll
 
-        article
+        .deck
             border: 1px solid black
             border-radius: 4px
             box-shadow: 7px 7px 10px black
@@ -125,9 +125,7 @@ main
                     background-position-y: 50%
                     background-size: 120% 120%
 
-
-
-        article:first-child
+        .deck:first-child
             margin-right: 11.5vw
 
             div
@@ -139,7 +137,7 @@ main
                 background-repeat: no-repeat
                 background-size: 100% 100%
         
-        article:nth-child(2)
+        .deck:nth-child(2)
             margin-left: 11.5vw
 
             div
@@ -149,7 +147,7 @@ main
             p
                 background-image: linear-gradient(to right, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #c2bed0, #cac4e8, #d3c9ff, #b2a1ff, #8e7aff, #6351ff, #0022ff)
 
-        article:nth-child(3)
+        .deck:nth-child(3)
             margin-right: 11.5vw
 
             div
@@ -159,7 +157,7 @@ main
             p
                 background: linear-gradient(0deg, rgba(255,255,255,1) 46%, rgba(0,42,255,1) 52%)
 
-        article:nth-child(4)
+        .deck:nth-child(4)
             margin-left: 11.5vw
 
             div
@@ -169,5 +167,50 @@ main
             p
                 background-image: radial-gradient(circle, #4719cb, #0067f4, #008de7, #00a9bf, #00c09d, #47b36d, #6ba33c, #898f00, #855e0f, #67371d, #391c1b, #000000)
 
+#comandante
+    @include list
+
+    justify-content: center
+
+    max-width: 20vw
+
+    h1
+        width: 100%
+
+    .card
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+
+        .header
+            width: 100%
+
+            margin-bottom: 10px
+
+#tierras, #resto
+    @include list
+
+    justify-content: space-around
+
+    max-width: 30vw
+
+    h1
+        width: 100%
+
+    .card
+        width: 49%
+
+    .card:hover
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+
+        padding-bottom: 10px
+
+        .header
+            width: 100%
+
+            padding: 5px
+            margin-bottom: 5px
 
 @import media
