@@ -566,7 +566,7 @@ main section .deck:nth-child(4) a > div {
   padding: 5px;
 }
 #comandante .card .header b {
-  max-height: 23;
+  max-height: 23px;
   flex-grow: 1;
   line-height: 25px;
   text-overflow: ellipsis;
@@ -643,7 +643,7 @@ main section .deck:nth-child(4) a > div {
   padding: 5px;
 }
 #tierras .container .card .header b, #resto .container .card .header b {
-  max-height: 23;
+  max-height: 23px;
   flex-grow: 1;
   line-height: 25px;
   text-overflow: ellipsis;
