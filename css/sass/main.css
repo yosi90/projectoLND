@@ -1,4 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pt-4 {
+  padding-top: 4rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-0 {
+  margin: 0rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-0 {
+  margin-top: 0rem;
+}
+
 .azul {
   background-color: blue;
 }
@@ -230,14 +326,13 @@ header > div #hamburguer {
   display: none;
   align-items: center;
   justify-content: space-around;
-  width: 200px;
 }
 header > div #hamburguer button {
   padding: 5px 5px 2px 5px;
 }
 header > div #hamburguer button > img {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 }
 header > div ul {
   display: flex;
@@ -378,12 +473,6 @@ main section .deck:hover div {
   background-position-y: 50%;
   background-size: 120% 120%;
 }
-main section > h1 {
-  width: 100%;
-  font-size: 4vw;
-  text-align: center;
-  margin: 0;
-}
 main section .deck:first-child {
   margin-right: 11.5vw;
 }
@@ -438,20 +527,22 @@ main section .deck:nth-child(4) a > div {
 }
 
 #comandante {
-  display: flex;
-  flex-flow: row wrap;
-  max-height: calc(100vh - 300px);
-  color: black;
   background-color: black;
   border: 1px solid rgb(228, 208, 142);
   border-radius: 10px;
   box-shadow: 7px 7px 10px black;
+  display: flex;
+  flex-flow: row wrap;
+  max-height: calc(100vh - 300px);
+  color: black;
   overflow: scroll;
   padding: 10px;
   justify-content: center;
   max-width: 20vw;
 }
 #comandante h1 {
+  width: 100%;
+  font-size: calc(10px + 1vw);
   text-align: center;
   color: white;
   box-shadow: 0px 7px 0px black;
@@ -512,27 +603,30 @@ main section .deck:nth-child(4) a > div {
 }
 
 #tierras, #resto {
-  display: flex;
-  flex-flow: row wrap;
-  max-height: calc(100vh - 300px);
-  color: black;
   background-color: black;
   border: 1px solid rgb(228, 208, 142);
   border-radius: 10px;
   box-shadow: 7px 7px 10px black;
-  overflow: scroll;
-  padding: 10px;
-  justify-content: space-around;
-  max-width: 30vw;
 }
 #tierras h1, #resto h1 {
+  font-size: calc(10px + 1vw);
   text-align: center;
   color: white;
   box-shadow: 0px 7px 0px black;
   padding: 5px;
   margin: 0;
 }
-#tierras .card, #resto .card {
+#tierras .container, #resto .container {
+  display: flex;
+  flex-flow: row wrap;
+  max-height: calc(100vh - 300px);
+  color: black;
+  overflow: scroll;
+  padding: 10px;
+  justify-content: space-around;
+  max-width: 30vw;
+}
+#tierras .container .card, #resto .container .card {
   height: 33px;
   border: 1px solid antiquewhite;
   border-radius: 10px;
@@ -540,7 +634,7 @@ main section .deck:nth-child(4) a > div {
   transition: 0.7s ease;
   margin-bottom: 3px;
 }
-#tierras .card .header, #resto .card .header {
+#tierras .container .card .header, #resto .container .card .header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -548,7 +642,7 @@ main section .deck:nth-child(4) a > div {
   background-color: antiquewhite;
   padding: 5px;
 }
-#tierras .card .header b, #resto .card .header b {
+#tierras .container .card .header b, #resto .container .card .header b {
   max-height: 23;
   flex-grow: 1;
   line-height: 25px;
@@ -557,36 +651,33 @@ main section .deck:nth-child(4) a > div {
   overflow: hidden;
   margin-right: 5px;
 }
-#tierras .card .header .mmc, #resto .card .header .mmc {
+#tierras .container .card .header .mmc, #resto .container .card .header .mmc {
   min-width: 23px;
 }
-#tierras .card:hover, #resto .card:hover {
+#tierras .container .card:hover, #resto .container .card:hover {
   height: 356px;
   padding-bottom: 10px;
 }
-#tierras .card img, #resto .card img {
+#tierras .container .card img, #resto .container .card img {
   max-width: 223px;
   border-radius: 10px;
 }
-#tierras .open, #resto .open {
+#tierras .container .open, #resto .container .open {
   height: 356px;
 }
-#tierras h1, #resto h1 {
-  width: 100%;
-}
-#tierras .card, #resto .card {
+#tierras .container .card, #resto .container .card {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 49%;
 }
-#tierras .card .header, #resto .card .header {
+#tierras .container .card .header, #resto .container .card .header {
   width: 100%;
 }
-#tierras .card:hover, #resto .card:hover {
+#tierras .container .card:hover, #resto .container .card:hover {
   padding-bottom: 10px;
 }
-#tierras .card:hover .header, #resto .card:hover .header {
+#tierras .container .card:hover .header, #resto .container .card:hover .header {
   width: 100%;
   padding: 5px;
   margin-bottom: 5px;
@@ -613,31 +704,39 @@ main section .deck:nth-child(4) a > div {
   }
 }
 @media screen and (max-width: 1125px) {
-  section > h1 {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
-  }
   article {
     width: 70%;
     max-width: none !important;
     margin-top: 20px;
   }
+  article .container {
+    max-width: none !important;
+  }
+  #resto {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 800px) {
   header div {
+    height: 20px;
     background-color: transparent;
+    transform: translateY(-10px);
   }
   header div #hamburguer {
     display: flex;
     width: 130px;
-    margin: 15px;
   }
   header div ul {
     display: none;
   }
   main {
-    height: calc(100vh - 117.65px);
-    margin-top: 117.65px;
+    height: calc(100vh - 63.65px);
+    margin-top: 63.65px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .card {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 480px) {
