@@ -1,209 +1,171 @@
 @-webkit-keyframes atraxa {
   0% {
     background-image: url(../../media/img/atraxa.jpg);
-    transform: scale(100%);
   }
   20% {
     background-image: url(../../media/img/ajani.jpg);
-    transform: scale(105%);
   }
   40% {
     background-image: url(../../media/img/bastion.jpg);
-    transform: scale(100%);
   }
   60% {
     background-image: url(../../media/img/polillas.jpg);
-    transform: scale(105%);
   }
   80% {
     background-image: url(../../media/img/ratas.jpg);
-    transform: scale(100%);
   }
   100% {
     background-image: url(../../media/img/skate.jpg);
-    transform: scale(105%);
   }
 }
 @keyframes atraxa {
   0% {
     background-image: url(../../media/img/atraxa.jpg);
-    transform: scale(100%);
   }
   20% {
     background-image: url(../../media/img/ajani.jpg);
-    transform: scale(105%);
   }
   40% {
     background-image: url(../../media/img/bastion.jpg);
-    transform: scale(100%);
   }
   60% {
     background-image: url(../../media/img/polillas.jpg);
-    transform: scale(105%);
   }
   80% {
     background-image: url(../../media/img/ratas.jpg);
-    transform: scale(100%);
   }
   100% {
     background-image: url(../../media/img/skate.jpg);
-    transform: scale(105%);
   }
 }
 @-webkit-keyframes oloro {
   0% {
     background-image: url(../../media/img/oloro.jpeg);
-    transform: scale(100%);
   }
   20% {
     background-image: url(../../media/img/arbitro.jpg);
-    transform: scale(105%);
   }
   40% {
     background-image: url(../../media/img/drannith.jpg);
-    transform: scale(100%);
   }
   60% {
     background-image: url(../../media/img/opposition.jpg);
-    transform: scale(105%);
   }
   80% {
     background-image: url(../../media/img/vampiric.png);
-    transform: scale(100%);
   }
   100% {
     background-image: url(../../media/img/aetherflux.jpg);
-    transform: scale(105%);
   }
 }
 @keyframes oloro {
   0% {
     background-image: url(../../media/img/oloro.jpeg);
-    transform: scale(100%);
   }
   20% {
     background-image: url(../../media/img/arbitro.jpg);
-    transform: scale(105%);
   }
   40% {
     background-image: url(../../media/img/drannith.jpg);
-    transform: scale(100%);
   }
   60% {
     background-image: url(../../media/img/opposition.jpg);
-    transform: scale(105%);
   }
   80% {
     background-image: url(../../media/img/vampiric.png);
-    transform: scale(100%);
   }
   100% {
     background-image: url(../../media/img/aetherflux.jpg);
-    transform: scale(105%);
   }
 }
 @-webkit-keyframes brago {
   0% {
     background-image: url(../../media/img/brago.jpg);
-    transform: scale(100%);
   }
   20% {
     background-image: url(../../media/img/venser.jpg);
-    transform: scale(105%);
   }
   40% {
     background-image: url(../../media/img/veredicto.jpg);
-    transform: scale(100%);
   }
   60% {
     background-image: url(../../media/img/remora.webp);
-    transform: scale(105%);
   }
   80% {
     background-image: url(../../media/img/teferi.jpg);
-    transform: scale(100%);
   }
   100% {
     background-image: url(../../media/img/azcanta.jpeg);
-    transform: scale(105%);
   }
 }
 @keyframes brago {
   0% {
     background-image: url(../../media/img/brago.jpg);
-    transform: scale(100%);
   }
   20% {
     background-image: url(../../media/img/venser.jpg);
-    transform: scale(105%);
   }
   40% {
     background-image: url(../../media/img/veredicto.jpg);
-    transform: scale(100%);
   }
   60% {
     background-image: url(../../media/img/remora.webp);
-    transform: scale(105%);
   }
   80% {
     background-image: url(../../media/img/teferi.jpg);
-    transform: scale(100%);
   }
   100% {
     background-image: url(../../media/img/azcanta.jpeg);
-    transform: scale(105%);
   }
 }
 @-webkit-keyframes urdragon {
   0% {
     background-image: url(../../media/img/urdragon.webp);
-    transform: scale(100%);
   }
   20% {
     background-image: url(../../media/img/tiamat.jpg);
-    transform: scale(105%);
   }
   40% {
     background-image: url(../../media/img/rohehuesos.png);
-    transform: scale(100%);
   }
   60% {
     background-image: url(../../media/img/copper.jpg);
-    transform: scale(105%);
   }
   80% {
     background-image: url(../../media/img/dromoka.jpg);
-    transform: scale(100%);
   }
   100% {
     background-image: url(../../media/img/balefire.jpeg);
-    transform: scale(105%);
   }
 }
 @keyframes urdragon {
   0% {
     background-image: url(../../media/img/urdragon.webp);
-    transform: scale(100%);
   }
   20% {
     background-image: url(../../media/img/tiamat.jpg);
-    transform: scale(105%);
   }
   40% {
     background-image: url(../../media/img/rohehuesos.png);
-    transform: scale(100%);
   }
   60% {
     background-image: url(../../media/img/copper.jpg);
-    transform: scale(105%);
   }
   80% {
     background-image: url(../../media/img/dromoka.jpg);
-    transform: scale(100%);
   }
   100% {
     background-image: url(../../media/img/balefire.jpeg);
-    transform: scale(105%);
+  }
+}
+@-webkit-keyframes zoomIn {
+  to {
+    transform: scale(110%);
+  }
+}
+@keyframes zoomIn {
+  to {
+    transform: scale(110%);
   }
 }
 body {
@@ -278,8 +240,8 @@ header > div ul li h3 {
 }
 
 main {
-  height: calc(100vh - 111.65px);
-  margin-top: 111.65px;
+  height: calc(100vh - 75.65px);
+  margin-top: 75.65px;
 }
 main aside {
   position: fixed;
@@ -332,12 +294,15 @@ main section {
   align-items: center;
   height: 100%;
   color: white;
+  box-shadow: 7px 7px 10px inset black;
   overflow: scroll;
 }
 main section article {
   border: 1px solid black;
   border-radius: 4px;
+  box-shadow: 7px 7px 10px black;
   overflow: hidden;
+  transition: 0.7s ease;
 }
 main section article a {
   text-decoration: none;
@@ -347,6 +312,7 @@ main section article div {
   width: calc(400px + 5vw);
   background-color: white;
   background-size: 110% 110%;
+  transition: 2s ease;
 }
 main section article p {
   position: relative;
@@ -363,6 +329,14 @@ main section article p b {
   color: white;
   border-radius: 10px;
   padding: 10px;
+}
+main section article:hover {
+  transform: scale(98%);
+}
+main section article:hover div {
+  background-position-x: 40%;
+  background-position-y: 50%;
+  background-size: 120% 120%;
 }
 main section article:first-child {
   margin-right: 11.5vw;
@@ -452,6 +426,7 @@ main section article:nth-child(4) p {
   }
   header div #hamburguer {
     display: flex;
+    width: 130px;
     margin: 15px;
   }
   header div ul {
