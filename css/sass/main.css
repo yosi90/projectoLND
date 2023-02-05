@@ -23,10 +23,6 @@
   align-items: center;
 }
 
-.align-items-stretch {
-  align-items: stretch;
-}
-
 .pt-5 {
   padding-top: 5rem;
 }
@@ -439,8 +435,8 @@ main section .deck a {
 }
 main section .deck a > div {
   position: relative;
-  height: calc(240px + 5vw);
-  width: calc(440px + 5vw);
+  height: calc(280px + 5vw);
+  width: calc(480px + 5vw);
   background-color: white;
   background-size: 110% 110%;
   transition: 2s ease;
@@ -473,9 +469,6 @@ main section .deck:hover div {
   background-position-y: 50%;
   background-size: 120% 120%;
 }
-main section .deck:first-child {
-  margin-right: 11.5vw;
-}
 main section .deck:first-child a > div {
   -webkit-animation-name: atraxa;
           animation-name: atraxa;
@@ -487,7 +480,7 @@ main section .deck:first-child a > div {
           animation-timing-function: linear;
 }
 main section .deck:nth-child(2) {
-  margin-left: 11.5vw;
+  margin-left: 10.5vw;
 }
 main section .deck:nth-child(2) a > div {
   -webkit-animation-name: oloro;
@@ -498,9 +491,6 @@ main section .deck:nth-child(2) a > div {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-}
-main section .deck:nth-child(3) {
-  margin-right: 11.5vw;
 }
 main section .deck:nth-child(3) a > div {
   -webkit-animation-name: brago;
@@ -513,7 +503,7 @@ main section .deck:nth-child(3) a > div {
           animation-timing-function: linear;
 }
 main section .deck:nth-child(4) {
-  margin-left: 11.5vw;
+  margin-left: 10.5vw;
 }
 main section .deck:nth-child(4) a > div {
   -webkit-animation-name: urdragon;
