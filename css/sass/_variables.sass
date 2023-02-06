@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap')
+@import animaciones
 
 $secondary: #bdbdbd99
 $secondaryStrong: #b1b1b1c4
@@ -64,54 +65,54 @@ $secondaryStrong: #b1b1b1c4
     padding: 10px
 
     .card
-        height: 33px
+        position: relative
+        width: 212px
+        height: 25px
 
-        border: 1px solid antiquewhite
-        border-radius: 10px
+        border-top-left-radius: 10px
+        border-top-right-radius: 10px
 
         overflow: hidden
 
-        transition: .7s ease
-
         margin-bottom: 3px
 
-        .header
-            display: flex
-            flex-flow: row nowrap
-            justify-content: flex-end
+        button
+            position: absolute
+            top: 0
 
-            max-height: 35px
+            width: 100%
+            height: 25px
 
-            background-color: antiquewhite
+            background-color: rgba(0, 0, 0, 0)
+            color: rgba(255, 255, 255, 0)
 
-            padding: 5px
+            border: none
 
-            b
-                max-height: 23px
-                flex-grow: 1
+            z-index: 2
 
-                line-height: 25px
-                text-overflow: ellipsis
-                white-space: nowrap
-                overflow: hidden
-
-                margin-right: 5px
-
-            .mmc
-                min-width: 23px
-
-        &:hover
-            height: 356px
-
-            padding-bottom: 10px
+            &:hover
+                background-color: rgba(0, 0, 0, 0.8)
+                color: rgba(255, 255, 255, 1)
 
         img
-            max-width: 223px
+            width: 100%
 
-            border-radius: 10px
+            transform: translateY(-5px)
+
+    .card:has(button:focus)
+        border-radius: 10px
+
+        animation-name: open
+        animation-duration: 2s
+        animation-timing-function: linear
+        animation-fill-mode: forwards
+
+        img
+            transform: translateY(0)
+
 
     .open
-        height: 356px
+        height: 100% !important
 
 .azul
     background-color: blue

@@ -1,6 +1,5 @@
 @import framework/_yosiFramework
 @import variables
-@import animaciones
 
 body
     font-family: 'Caveat', cursive
@@ -74,7 +73,7 @@ main
         color: white
         box-shadow: 7px 7px 10px inset black
 
-        overflow: scroll
+        moz-overflow: scroll
 
         .deck
             border: 1px solid black
@@ -228,13 +227,26 @@ main
             .header
                 width: 100%
 
-        .card:hover
-            padding-bottom: 10px
+#coleccion
+    background-color: black
+    border: 1px solid rgb(228, 208, 142)
+    border-radius: 10px
+    box-shadow: 7px 7px 10px black
 
-            .header
-                width: 100%
+    h1
+        font-size: calc( 10px + 1vw )
+        text-align: center
+        color: white
+        box-shadow: 0px 7px 0px black
 
-                padding: 5px
-                margin-bottom: 5px
+        padding: 5px
+        margin: 0
+
+    .container
+        @include list
+
+        justify-content: space-around
+
+        max-width: 90vw
 
 @import media

@@ -91,38 +91,6 @@
   margin-top: 0rem;
 }
 
-.azul {
-  background-color: blue;
-}
-
-.blanco {
-  background-color: white;
-}
-
-.negro {
-  background-color: black;
-}
-
-.rojo {
-  background-color: red;
-}
-
-.verde {
-  background-color: green;
-}
-
-.disabled {
-  border: 1px solid black;
-}
-.disabled::after {
-  content: "";
-  display: block;
-  width: 21px;
-  height: 21px;
-  border-bottom: 3px solid black;
-  transform: translateY(-7px) translateX(-9px) rotate(-55deg);
-}
-
 @-webkit-keyframes atraxa {
   0% {
     background-image: url(../../media/img/atraxa.jpg);
@@ -294,6 +262,54 @@
     transform: scale(110%);
   }
 }
+@-webkit-keyframes open {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes open {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+.azul {
+  background-color: blue;
+}
+
+.blanco {
+  background-color: white;
+}
+
+.negro {
+  background-color: black;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.verde {
+  background-color: green;
+}
+
+.disabled {
+  border: 1px solid black;
+}
+.disabled::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-bottom: 3px solid black;
+  transform: translateY(-7px) translateX(-9px) rotate(-55deg);
+}
+
 body {
   font-family: "Caveat", cursive;
   background-color: rgb(26, 26, 26);
@@ -421,7 +437,7 @@ main section {
   height: 100%;
   color: white;
   box-shadow: 7px 7px 10px inset black;
-  overflow: scroll;
+  moz-overflow: scroll;
 }
 main section .deck {
   border: 1px solid black;
@@ -540,43 +556,48 @@ main section .deck:nth-child(4) a > div {
   margin: 0;
 }
 #comandante .card {
-  height: 33px;
-  border: 1px solid antiquewhite;
-  border-radius: 10px;
+  position: relative;
+  width: 212px;
+  height: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   overflow: hidden;
-  transition: 0.7s ease;
   margin-bottom: 3px;
 }
-#comandante .card .header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  max-height: 35px;
-  background-color: antiquewhite;
-  padding: 5px;
+#comandante .card button {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  border: none;
+  z-index: 2;
 }
-#comandante .card .header b {
-  max-height: 23px;
-  flex-grow: 1;
-  line-height: 25px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-right: 5px;
-}
-#comandante .card .header .mmc {
-  min-width: 23px;
-}
-#comandante .card:hover {
-  height: 356px;
-  padding-bottom: 10px;
+#comandante .card button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
 }
 #comandante .card img {
-  max-width: 223px;
+  width: 100%;
+  transform: translateY(-5px);
+}
+#comandante .card:has(button:focus) {
   border-radius: 10px;
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#comandante .card:has(button:focus) img {
+  transform: translateY(0);
 }
 #comandante .open {
-  height: 356px;
+  height: 100% !important;
 }
 #comandante h1 {
   width: 100%;
@@ -617,43 +638,48 @@ main section .deck:nth-child(4) a > div {
   max-width: 30vw;
 }
 #tierras .container .card, #resto .container .card {
-  height: 33px;
-  border: 1px solid antiquewhite;
-  border-radius: 10px;
+  position: relative;
+  width: 212px;
+  height: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   overflow: hidden;
-  transition: 0.7s ease;
   margin-bottom: 3px;
 }
-#tierras .container .card .header, #resto .container .card .header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  max-height: 35px;
-  background-color: antiquewhite;
-  padding: 5px;
+#tierras .container .card button, #resto .container .card button {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  border: none;
+  z-index: 2;
 }
-#tierras .container .card .header b, #resto .container .card .header b {
-  max-height: 23px;
-  flex-grow: 1;
-  line-height: 25px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-right: 5px;
-}
-#tierras .container .card .header .mmc, #resto .container .card .header .mmc {
-  min-width: 23px;
-}
-#tierras .container .card:hover, #resto .container .card:hover {
-  height: 356px;
-  padding-bottom: 10px;
+#tierras .container .card button:hover, #resto .container .card button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
 }
 #tierras .container .card img, #resto .container .card img {
-  max-width: 223px;
+  width: 100%;
+  transform: translateY(-5px);
+}
+#tierras .container .card:has(button:focus), #resto .container .card:has(button:focus) {
   border-radius: 10px;
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#tierras .container .card:has(button:focus) img, #resto .container .card:has(button:focus) img {
+  transform: translateY(0);
 }
 #tierras .container .open, #resto .container .open {
-  height: 356px;
+  height: 100% !important;
 }
 #tierras .container .card, #resto .container .card {
   display: flex;
@@ -664,24 +690,93 @@ main section .deck:nth-child(4) a > div {
 #tierras .container .card .header, #resto .container .card .header {
   width: 100%;
 }
-#tierras .container .card:hover, #resto .container .card:hover {
-  padding-bottom: 10px;
+
+#coleccion {
+  background-color: black;
+  border: 1px solid rgb(228, 208, 142);
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px black;
 }
-#tierras .container .card:hover .header, #resto .container .card:hover .header {
-  width: 100%;
+#coleccion h1 {
+  font-size: calc(10px + 1vw);
+  text-align: center;
+  color: white;
+  box-shadow: 0px 7px 0px black;
   padding: 5px;
-  margin-bottom: 5px;
+  margin: 0;
+}
+#coleccion .container {
+  display: flex;
+  flex-flow: row wrap;
+  max-height: calc(100vh - 300px);
+  color: black;
+  overflow: scroll;
+  padding: 10px;
+  justify-content: space-around;
+  max-width: 90vw;
+}
+#coleccion .container .card {
+  position: relative;
+  width: 212px;
+  height: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+#coleccion .container .card button {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  border: none;
+  z-index: 2;
+}
+#coleccion .container .card button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
+}
+#coleccion .container .card img {
+  width: 100%;
+  transform: translateY(-5px);
+}
+#coleccion .container .card:has(button:focus) {
+  border-radius: 10px;
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#coleccion .container .card:has(button:focus) img {
+  transform: translateY(0);
+}
+#coleccion .container .open {
+  height: 100% !important;
 }
 
 @media screen and (max-width: 1450px) {
   #tierras .card, #resto .card {
     width: 100%;
   }
+  .indexSection {
+    justify-content: center;
+  }
+  .indexSection .deck:nth-child(2) {
+    margin-left: 2%;
+  }
+  .indexSection .deck:nth-child(4) {
+    margin-left: 2%;
+  }
 }
 @media screen and (max-width: 1322px) {
   .deck {
     float: right;
-    margin: 5% 0 !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -704,6 +799,11 @@ main section .deck:nth-child(4) a > div {
   }
   #resto {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1004px) {
+  .deck {
+    margin: 2% 0 !important;
   }
 }
 @media screen and (max-width: 800px) {
