@@ -2,11 +2,21 @@
 @import variables
 
 body
-    font-family: 'Caveat', cursive
+    font-family: 'Orbitron', sans-serif
+    //font-family: 'Caveat', cursive
 
     background-color: rgb(26, 26, 26)
 
     margin: 0
+
+::-webkit-scrollbar-thumb
+    background-color: darkgray
+    border: 4px solid transparent
+    border-radius: 8px
+    background-clip: padding-box
+
+::-webkit-scrollbar
+    width: 16px
 
 header
     position: fixed
@@ -97,7 +107,7 @@ main
                     background-size: 110% 110%
 
                     transition: 2s ease
-                    
+
                     b
                         position: absolute
                         bottom: 10px
@@ -137,7 +147,7 @@ main
             a > div
                 animation-name: atraxa
                 @include animacion
-        
+
         .deck:nth-child(2)
             margin-left: 10.5vw
 
@@ -157,16 +167,14 @@ main
                 animation-name: urdragon
                 @include animacion
 
-#comandante
+section > article
     background-color: black
     border: 1px solid rgb(228, 208, 142)
     border-radius: 10px
     box-shadow: 7px 7px 10px black
 
     h1
-        width: 100%
-        
-        font-size: calc( 10px + 1vw )
+        font-size: calc( 20px + .9vw )
         text-align: center
         color: white
         box-shadow: 0px 7px 0px black
@@ -174,73 +182,26 @@ main
         padding: 5px
         margin: 0
 
+
+.container
+    @include list
+
+    justify-content: space-around
+
+    max-width: 30vw
+
+#comandante
     @include list
 
     justify-content: center
 
-    max-width: 20vw
-
-    h1
-        width: 100%
-
-    .card
-        display: flex
-        flex-flow: row wrap
-        justify-content: center
-
-        padding-bottom: 10px
-
-        .header
-            width: 100%
-
-            margin-bottom: 10px
-
-#tierras, #resto
-    background-color: black
-    border: 1px solid rgb(228, 208, 142)
-    border-radius: 10px
-    box-shadow: 7px 7px 10px black
-
-    h1
-        font-size: calc( 10px + 1vw )
-        text-align: center
-        color: white
-        box-shadow: 0px 7px 0px black
-
-        padding: 5px
-        margin: 0
+    max-width: 280px
 
     .container
-        @include list
-
-        justify-content: space-around
-
-        max-width: 30vw
-
-        .card
-            display: flex
-            flex-flow: row wrap
-            justify-content: center
-
-            width: 49%
-
-            .header
-                width: 100%
+        overflow: hidden
 
 #coleccion
-    background-color: black
-    border: 1px solid rgb(228, 208, 142)
-    border-radius: 10px
-    box-shadow: 7px 7px 10px black
-
-    h1
-        font-size: calc( 10px + 1vw )
-        text-align: center
-        color: white
-        box-shadow: 0px 7px 0px black
-
-        padding: 5px
-        margin: 0
+    height: 60vh
 
     .container
         @include list
@@ -248,5 +209,6 @@ main
         justify-content: space-around
 
         max-width: 90vw
+        height: calc(100% - 77px)
 
 @import media

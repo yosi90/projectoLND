@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
 .d-flex {
   display: flex;
 }
@@ -267,7 +268,7 @@
     height: 0%;
   }
   to {
-    height: 100%;
+    height: 296px;
   }
 }
 @keyframes open {
@@ -275,7 +276,7 @@
     height: 0%;
   }
   to {
-    height: 100%;
+    height: 296px;
   }
 }
 .azul {
@@ -311,9 +312,20 @@
 }
 
 body {
-  font-family: "Caveat", cursive;
+  font-family: "Orbitron", sans-serif;
   background-color: rgb(26, 26, 26);
   margin: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
 }
 
 header {
@@ -532,28 +544,88 @@ main section .deck:nth-child(4) a > div {
           animation-timing-function: linear;
 }
 
-#comandante {
+section > article {
   background-color: black;
   border: 1px solid rgb(228, 208, 142);
   border-radius: 10px;
   box-shadow: 7px 7px 10px black;
-  display: flex;
-  flex-flow: row wrap;
-  max-height: calc(100vh - 300px);
-  color: black;
-  overflow: scroll;
-  padding: 10px;
-  justify-content: center;
-  max-width: 20vw;
 }
-#comandante h1 {
-  width: 100%;
-  font-size: calc(10px + 1vw);
+section > article h1 {
+  font-size: calc(20px + 0.9vw);
   text-align: center;
   color: white;
   box-shadow: 0px 7px 0px black;
   padding: 5px;
   margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  max-height: calc(100vh - 300px);
+  color: black;
+  overflow: auto;
+  moz-overflow: scroll;
+  padding: 10px;
+  justify-content: space-around;
+  max-width: 30vw;
+}
+.container .card {
+  position: relative;
+  width: 212px;
+  height: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+.container .card button {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  border: none;
+  z-index: 2;
+}
+.container .card button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
+}
+.container .card img {
+  width: 100%;
+  border-radius: 9px;
+  transform: translateY(-5px);
+}
+.container .card:has(button:focus) {
+  border-radius: 10px;
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.container .card:has(button:focus) img {
+  transform: translateY(0);
+}
+.container .open {
+  height: 100% !important;
+}
+
+#comandante {
+  display: flex;
+  flex-flow: row wrap;
+  max-height: calc(100vh - 300px);
+  color: black;
+  overflow: auto;
+  moz-overflow: scroll;
+  padding: 10px;
+  justify-content: center;
+  max-width: 280px;
 }
 #comandante .card {
   position: relative;
@@ -580,14 +652,15 @@ main section .deck:nth-child(4) a > div {
 }
 #comandante .card img {
   width: 100%;
+  border-radius: 9px;
   transform: translateY(-5px);
 }
 #comandante .card:has(button:focus) {
   border-radius: 10px;
   -webkit-animation-name: open;
           animation-name: open;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -599,121 +672,24 @@ main section .deck:nth-child(4) a > div {
 #comandante .open {
   height: 100% !important;
 }
-#comandante h1 {
-  width: 100%;
-}
-#comandante .card {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-#comandante .card .header {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-#tierras, #resto {
-  background-color: black;
-  border: 1px solid rgb(228, 208, 142);
-  border-radius: 10px;
-  box-shadow: 7px 7px 10px black;
-}
-#tierras h1, #resto h1 {
-  font-size: calc(10px + 1vw);
-  text-align: center;
-  color: white;
-  box-shadow: 0px 7px 0px black;
-  padding: 5px;
-  margin: 0;
-}
-#tierras .container, #resto .container {
-  display: flex;
-  flex-flow: row wrap;
-  max-height: calc(100vh - 300px);
-  color: black;
-  overflow: scroll;
-  padding: 10px;
-  justify-content: space-around;
-  max-width: 30vw;
-}
-#tierras .container .card, #resto .container .card {
-  position: relative;
-  width: 212px;
-  height: 25px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+#comandante .container {
   overflow: hidden;
-  margin-bottom: 3px;
-}
-#tierras .container .card button, #resto .container .card button {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 25px;
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(255, 255, 255, 0);
-  border: none;
-  z-index: 2;
-}
-#tierras .container .card button:hover, #resto .container .card button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgb(255, 255, 255);
-}
-#tierras .container .card img, #resto .container .card img {
-  width: 100%;
-  transform: translateY(-5px);
-}
-#tierras .container .card:has(button:focus), #resto .container .card:has(button:focus) {
-  border-radius: 10px;
-  -webkit-animation-name: open;
-          animation-name: open;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-#tierras .container .card:has(button:focus) img, #resto .container .card:has(button:focus) img {
-  transform: translateY(0);
-}
-#tierras .container .open, #resto .container .open {
-  height: 100% !important;
-}
-#tierras .container .card, #resto .container .card {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 49%;
-}
-#tierras .container .card .header, #resto .container .card .header {
-  width: 100%;
 }
 
 #coleccion {
-  background-color: black;
-  border: 1px solid rgb(228, 208, 142);
-  border-radius: 10px;
-  box-shadow: 7px 7px 10px black;
-}
-#coleccion h1 {
-  font-size: calc(10px + 1vw);
-  text-align: center;
-  color: white;
-  box-shadow: 0px 7px 0px black;
-  padding: 5px;
-  margin: 0;
+  height: 60vh;
 }
 #coleccion .container {
   display: flex;
   flex-flow: row wrap;
   max-height: calc(100vh - 300px);
   color: black;
-  overflow: scroll;
+  overflow: auto;
+  moz-overflow: scroll;
   padding: 10px;
   justify-content: space-around;
   max-width: 90vw;
+  height: calc(100% - 77px);
 }
 #coleccion .container .card {
   position: relative;
@@ -740,14 +716,15 @@ main section .deck:nth-child(4) a > div {
 }
 #coleccion .container .card img {
   width: 100%;
+  border-radius: 9px;
   transform: translateY(-5px);
 }
 #coleccion .container .card:has(button:focus) {
   border-radius: 10px;
   -webkit-animation-name: open;
           animation-name: open;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -825,8 +802,18 @@ main section .deck:nth-child(4) a > div {
   }
 }
 @media screen and (max-width: 720px) {
-  .card {
+  section > article > .container .card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 100% !important;
+    height: 40px;
+  }
+  section > article > .container .card button {
+    height: 40px;
+  }
+  section > article > .container .card img {
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 480px) {
