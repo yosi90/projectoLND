@@ -493,6 +493,14 @@ header {
   background-color: antiquewhite;
   z-index: 2;
 }
+header #help {
+  position: absolute;
+  top: -4px;
+  left: 30px;
+}
+header #help > b {
+  font-size: calc(5px + 0.2vw);
+}
 header > a img {
   float: right;
   width: 100px;
@@ -763,7 +771,6 @@ section > article h1 {
   padding: 10px;
   justify-content: center;
   max-width: 280px;
-  max-height: -moz-fit-content;
   max-height: fit-content;
 }
 #comandante .card {
@@ -897,17 +904,107 @@ section > article h1 {
   background-image: url(../../media/img/urdragon.webp);
 }
 
+#desglose {
+  position: relative;
+  min-height: none !important;
+  padding: 10px;
+}
+#desglose img {
+  max-width: 100%;
+  border-radius: 5.2%;
+}
+#desglose #textoCabecera {
+  position: absolute;
+  top: 9.2%;
+  right: 8%;
+  text-align: right;
+  font-size: calc(15px + 1vw);
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+}
+#desglose #textoArte {
+  position: absolute;
+  top: 9.2%;
+  left: 8%;
+  max-width: 70%;
+  font-size: calc(15px + 1vw);
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+}
+#desglose #textoTipo {
+  position: absolute;
+  top: 33%;
+  right: 8%;
+  max-width: 70%;
+  text-align: right;
+  font-size: calc(15px + 1vw);
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+}
+#desglose #textoReglas {
+  position: absolute;
+  bottom: 18%;
+  left: 8%;
+  max-width: 70%;
+  font-size: calc(12px + 1vw);
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+}
+#desglose #textoEstadisticas {
+  position: absolute;
+  bottom: 11%;
+  right: 8%;
+  max-width: 70%;
+  text-align: right;
+  font-size: calc(10px + 0.9vw);
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.map-selector {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: rgba(107, 84, 122, 0);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-property: top, left, right, bottom, color;
+}
+#desglose .map-selector.hover {
+  color: rgba(162, 88, 177, 0.5019607843);
+}
+.map-selector:after {
+  content: " ";
+  position: absolute;
+  background: currentColor;
+  top: inherit;
+  right: inherit;
+  bottom: inherit;
+  left: inherit;
+  background: currentColor;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-property: top, left, right, bottom, background;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 1450px) {
   #tierras .card, #resto .card {
     width: 100%;
   }
-  main > section:not(#comandantes) {
+  main > section:not(#comandantes):not(#desglose) {
     padding: 40px;
   }
-  main > section:not(#comandantes) .deck:nth-child(2) {
+  main > section:not(#comandantes):not(#desglose) .deck:nth-child(2) {
     margin-left: 2%;
   }
-  main > section:not(#comandantes) .deck:nth-child(4) {
+  main > section:not(#comandantes):not(#desglose) .deck:nth-child(4) {
     margin-left: 2%;
   }
 }
@@ -926,11 +1023,11 @@ section > article h1 {
   }
 }
 @media screen and (max-width: 1125px) {
-  article {
+  article:not(#desglose) {
     max-width: none !important;
     margin-top: 20px;
   }
-  article .container {
+  article:not(#desglose) .container {
     max-width: none !important;
   }
   #resto {

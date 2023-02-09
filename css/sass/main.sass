@@ -29,6 +29,14 @@ header
 
     z-index: 2
 
+    #help
+        position: absolute
+        top: -4px
+        left: 30px
+
+        > b
+            font-size: calc( 5px + .2vw )
+
     > a img
         float: right
         width: 100px
@@ -184,7 +192,6 @@ section > article
         padding: 5px
         margin: 0
 
-
 .container
     @include list
 
@@ -237,7 +244,7 @@ section > article
             padding: 10px
 
             z-index: 1
-        
+
     .deck:first-child > a > div
         background-image: url(../../media/img/atraxa.jpg)
 
@@ -249,5 +256,122 @@ section > article
 
     .deck:nth-child(4) > a > div
         background-image: url(../../media/img/urdragon.webp)
+
+#desglose
+    position: relative
+
+    min-height: none !important
+
+    padding: 10px
+
+    img
+        max-width: 100%
+
+        border-radius: 5.2%
+
+    #textoCabecera
+        position: absolute
+        top: 9.2%
+        right: 8%
+
+        text-align: right
+        font-size: calc( 15px + 1vw )
+
+        background-color: rgba(0, 0, 0, .9)
+
+        border-radius: 10px
+
+        padding: 15px
+
+    #textoArte
+        position: absolute
+        top: 9.2%
+        left: 8%
+
+        max-width: 70%
+
+        font-size: calc( 15px + 1vw )
+
+        background-color: rgba(0, 0, 0, .9)
+
+        border-radius: 10px
+
+        padding: 15px
+
+    #textoTipo
+        position: absolute
+        top: 33%
+        right: 8%
+
+        max-width: 70%
+
+        text-align: right
+        font-size: calc( 15px + 1vw )
+
+        background-color: rgba(0, 0, 0, .9)
+
+        border-radius: 10px
+
+        padding: 15px
+
+    #textoReglas
+        position: absolute
+        bottom: 18%
+        left: 8%
+
+        max-width: 70%
+
+        font-size: calc( 12px + 1vw )
+
+        background-color: rgba(0, 0, 0, .9)
+
+        border-radius: 10px
+
+        padding: 15px
+
+    #textoEstadisticas
+        position: absolute
+        bottom: 11%
+        right: 8%
+
+        max-width: 70%
+
+        text-align: right
+        font-size: calc( 10px + .9vw )
+
+        background-color: rgba(0, 0, 0, .9)
+
+        border-radius: 10px
+
+        padding: 15px
+
+
+
+.map-selector
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    color: #6b547a00
+    transition-duration: .3s
+    transition-timing-function: ease-out
+    transition-property: top, left, right, bottom, color
+    
+    #desglose &.hover
+        color: #a258b180
+
+    &:after
+        content: ' '
+        position: absolute
+        background: currentColor
+        top: inherit
+        right: inherit
+        bottom: inherit
+        left: inherit
+        background: currentColor
+        transition-duration: .3s
+        transition-timing-function: ease-out
+        transition-property: top, left, right, bottom, background
+        pointer-events: none
 
 @import media

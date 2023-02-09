@@ -2,7 +2,7 @@
     #tierras .card, #resto .card
         width: 100%
 
-    main > section:not(#comandantes)
+    main > section:not(#comandantes):not(#desglose)
         padding: 40px
     
         .deck:nth-child(2)
@@ -24,7 +24,7 @@
             width: auto !important
 
 @media screen and (max-width: 1125px)
-    article
+    article:not(#desglose)
         max-width: none !important
 
         margin-top: 20px 

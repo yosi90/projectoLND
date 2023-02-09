@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis mazos</title>
+    <link rel="shortcut icon" href="../media/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/sass/main.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../media/img/logo.png" alt=""></a>
+        <div>
+            <div id="hamburguer">
+                <button id="btnMenu">
+                    <img src="../media/img/hamburger.webp" alt="">
+                </button>
+            </div>
+            <ul>
+                <a href="../index.html">
+                    <li>
+                        <h3>Mazos</h3>
+                    </li>
+                </a>
+                <a href="../subpages/coleccion.html">
+                    <li>
+                        <h3>Colección</h3>
+                    </li>
+                </a>
+                <a href="../subpages/comandantes.html">
+                    <li>
+                        <h3>Comandantes</h3>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <aside id="menu">
+            <ul>
+                <a href="../index.html">
+                    <li>
+                        <h3>Mazos</h3>
+                    </li>
+                </a>
+                <a href="../subpages/coleccion.html">
+                    <li>
+                        <h3>Colección</h3>
+                    </li>
+                </a>
+                <a href="../subpages/comandantes.html">
+                    <li>
+                        <h3>Comandantes</h3>
+                    </li>
+                </a>
+            </ul>
+        </aside>
+        <section>
+            <article id="desglose" class="my-3">
+                <img src="../media/img/atraxaBig.jpg" alt="" usemap="#partes">
+                <map id="mapa" name="partes">
+                    <area shape="rect" coords="43, 50, 1038, 152" alt="" class="cabeceraCarta">
+                    <area shape="rect" coords="70, 154, 1011, 822" class="arteCarta">
+                    <area shape="rect" coords="42, 820, 1036, 920" class="tipoCarta">
+                    <area shape="rect" coords="67, 919, 1008, 1310" class="reglasCarta">
+                    <area shape="rect" coords="843, 1314, 1030, 1399" class="estadisticasCarta">
+                </map>
+                <div class="map-selector"></div>
+                <p id="textoCabecera">
+                    Cabecera de la carta
+                    <br><br>
+                    A la izquierda tenemos el nombre
+                    <br>
+                    A la derecha el coste de maná
+                </p>
+                <p id="textoArte">
+                    Arte de la carta
+                    <br><br>
+                    El arte de las cartas magic ha pasado por muchas etapas, estando actualmente orientado por completo
+                    a un estilo "realista" digital.
+                </p>
+                <p id="textoTipo">
+                    Tipo de la carta
+                    <br><br>
+                    En esta ocasión nos encontramos con una criatura legendaria, pero podría ser tierra, instantaneo,
+                    artefacto y/o tantos otros...
+                </p>
+                <p id="textoReglas">
+                    Caja de reglas
+                    <br><br>
+                    Aquí se incluyen las habilidades y/o efectos de la carta. A veces también incluye pequeñas citas de
+                    personajes importantes del multiverso.
+                </p>
+                <p id="textoEstadisticas">
+                    Estadísticas de la criatura
+                    <br><br>
+                    En determinadas ocasiones encontraremos en esta esquina un marco con información importante sobre la
+                    carta. En esta ocasión a tratarse de una criatura encontramos su fuerza y resistencia.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/imageMapResize.min.js"></script>
+<script>$(document).ready(function (e) { $("map").imageMapResize(); });</script>
+
+</html>
