@@ -4,6 +4,7 @@
 body
     font-family: 'Orbitron', sans-serif
     //font-family: 'Caveat', cursive
+    box-sizing: border-box
 
     background-color: rgb(26, 26, 26)
 
@@ -78,7 +79,7 @@ main
         justify-content: space-around
         align-items: center
 
-        height: 100%
+        min-height: 100%
 
         color: white
         box-shadow: 7px 7px 10px inset black
@@ -143,29 +144,30 @@ main
                     background-position-y: 50%
                     background-size: 120% 120%
 
-        .deck:first-child
-            a > div
-                animation-name: atraxa
-                @include animacion
+.indexSection
+    .deck:first-child
+        a > div
+            animation-name: atraxa
+            @include animacion
 
-        .deck:nth-child(2)
-            margin-left: 10.5vw
+    .deck:nth-child(2)
+        margin-left: 10.5vw
 
-            a > div
-                animation-name: oloro
-                @include animacion
+        a > div
+            animation-name: oloro
+            @include animacion
 
-        .deck:nth-child(3)
-            a > div
-                animation-name: brago
-                @include animacion
+    .deck:nth-child(3)
+        a > div
+            animation-name: brago
+            @include animacion
 
-        .deck:nth-child(4)
-            margin-left: 10.5vw
+    .deck:nth-child(4)
+        margin-left: 10.5vw
 
-            a > div
-                animation-name: urdragon
-                @include animacion
+        a > div
+            animation-name: urdragon
+            @include animacion
 
 section > article
     background-color: black
@@ -196,6 +198,7 @@ section > article
     justify-content: center
 
     max-width: 280px
+    max-height: fit-content
 
     .container
         overflow: hidden
@@ -210,5 +213,41 @@ section > article
 
         max-width: 90vw
         height: calc(100% - 77px)
+
+#comandantes
+    article
+        width: 100%
+
+        background-color: white
+
+        p
+            color: black
+
+        b
+            position: absolute
+            bottom: 10px
+            left: 10px
+
+            background-color: rgba(0, 0, 0, .8)
+            color: white
+            font-size: calc( 15px + 0.8vw )
+
+            border-radius: 10px
+
+            padding: 10px
+
+            z-index: 1
+        
+    .deck:first-child > a > div
+        background-image: url(../../media/img/atraxa.jpg)
+
+    .deck:nth-child(2) > a > div
+        background-image: url(../../media/img/oloro.jpeg)
+
+    .deck:nth-child(3) > a > div
+        background-image: url(../../media/img/brago.jpg)
+
+    .deck:nth-child(4) > a > div
+        background-image: url(../../media/img/urdragon.webp)
 
 @import media

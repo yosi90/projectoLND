@@ -2,8 +2,8 @@
     #tierras .card, #resto .card
         width: 100%
 
-    .indexSection
-        justify-content: center
+    main > section:not(#comandantes)
+        padding: 40px
     
         .deck:nth-child(2)
             margin-left: 2%
@@ -25,7 +25,6 @@
 
 @media screen and (max-width: 1125px)
     article
-        width: 70%
         max-width: none !important
 
         margin-top: 20px 
@@ -77,5 +76,8 @@
             max-width: 300px
 
 @media screen and (max-width: 480px)
-    .deck
-        width: 80%
+    main > section
+        padding: 20px !important
+
+        > .deck
+            width: 80%
