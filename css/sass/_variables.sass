@@ -69,10 +69,13 @@ $secondaryStrong: #b1b1b1c4
     .card
         position: relative
         width: 212px
+        max-width: 212px
         height: 25px
 
         border-top-left-radius: 10px
         border-top-right-radius: 10px
+
+        transition: .4s linear
 
         overflow: hidden
 
@@ -104,12 +107,9 @@ $secondaryStrong: #b1b1b1c4
             transform: translateY(-5px)
 
     .card:has(button:focus)
-        border-radius: 10px
+        height: 296px
 
-        animation-name: open
-        animation-duration: .5s
-        animation-timing-function: linear
-        animation-fill-mode: forwards
+        border-radius: 10px
 
         img
             transform: translateY(0)

@@ -92,191 +92,149 @@
   margin-top: 0rem;
 }
 
-@-webkit-keyframes atraxa {
-  0% {
-    background-image: url(../../media/img/atraxa.jpg);
-  }
-  20% {
-    background-image: url(../../media/img/duskshell.jpg);
-  }
-  40% {
-    background-image: url(../../media/img/bastion.jpg);
-  }
-  60% {
-    background-image: url(../../media/img/polillas.jpg);
-  }
-  80% {
-    background-image: url(../../media/img/ratas.jpg);
-  }
-  100% {
-    background-image: url(../../media/img/skate.jpg);
-  }
-}
-
 @keyframes atraxa {
   0% {
     background-image: url(../../media/img/atraxa.jpg);
   }
+  17% {
+    background-image: url(../../media/img/atraxa.jpg);
+  }
   20% {
+    background-image: url(../../media/img/duskshell.jpg);
+  }
+  37% {
     background-image: url(../../media/img/duskshell.jpg);
   }
   40% {
     background-image: url(../../media/img/bastion.jpg);
   }
+  57% {
+    background-image: url(../../media/img/bastion.jpg);
+  }
   60% {
-    background-image: url(../../media/img/polillas.jpg);
+    background-image: url(../../media/img/skate.jpg);
+  }
+  77% {
+    background-image: url(../../media/img/skate.jpg);
   }
   80% {
     background-image: url(../../media/img/ratas.jpg);
   }
-  100% {
-    background-image: url(../../media/img/skate.jpg);
-  }
-}
-@-webkit-keyframes oloro {
-  0% {
-    background-image: url(../../media/img/oloro.jpeg);
-  }
-  20% {
-    background-image: url(../../media/img/arbitro.jpg);
-  }
-  40% {
-    background-image: url(../../media/img/drannith.jpg);
-  }
-  60% {
-    background-image: url(../../media/img/opposition.jpg);
-  }
-  80% {
-    background-image: url(../../media/img/vampiric.png);
+  97% {
+    background-image: url(../../media/img/ratas.jpg);
   }
   100% {
-    background-image: url(../../media/img/aetherflux.jpg);
+    background-image: url(../../media/img/atraxa.jpg);
   }
 }
 @keyframes oloro {
   0% {
     background-image: url(../../media/img/oloro.jpeg);
   }
+  17% {
+    background-image: url(../../media/img/oloro.jpeg);
+  }
   20% {
+    background-image: url(../../media/img/arbitro.jpg);
+  }
+  37% {
     background-image: url(../../media/img/arbitro.jpg);
   }
   40% {
     background-image: url(../../media/img/drannith.jpg);
   }
+  57% {
+    background-image: url(../../media/img/drannith.jpg);
+  }
   60% {
+    background-image: url(../../media/img/opposition.jpg);
+  }
+  77% {
     background-image: url(../../media/img/opposition.jpg);
   }
   80% {
     background-image: url(../../media/img/vampiric.png);
   }
-  100% {
-    background-image: url(../../media/img/aetherflux.jpg);
-  }
-}
-@-webkit-keyframes brago {
-  0% {
-    background-image: url(../../media/img/brago.jpg);
-  }
-  20% {
-    background-image: url(../../media/img/venser.jpg);
-  }
-  40% {
-    background-image: url(../../media/img/veredicto.jpg);
-  }
-  60% {
-    background-image: url(../../media/img/remora.webp);
-  }
-  80% {
-    background-image: url(../../media/img/teferi.jpg);
+  97% {
+    background-image: url(../../media/img/vampiric.png);
   }
   100% {
-    background-image: url(../../media/img/azcanta.jpeg);
+    background-image: url(../../media/img/oloro.jpeg);
   }
 }
 @keyframes brago {
   0% {
     background-image: url(../../media/img/brago.jpg);
   }
+  17% {
+    background-image: url(../../media/img/brago.jpg);
+  }
   20% {
+    background-image: url(../../media/img/venser.jpg);
+  }
+  37% {
     background-image: url(../../media/img/venser.jpg);
   }
   40% {
     background-image: url(../../media/img/veredicto.jpg);
   }
+  57% {
+    background-image: url(../../media/img/veredicto.jpg);
+  }
   60% {
+    background-image: url(../../media/img/remora.webp);
+  }
+  77% {
     background-image: url(../../media/img/remora.webp);
   }
   80% {
     background-image: url(../../media/img/teferi.jpg);
   }
-  100% {
-    background-image: url(../../media/img/azcanta.jpeg);
-  }
-}
-@-webkit-keyframes urdragon {
-  0% {
-    background-image: url(../../media/img/urdragon.webp);
-  }
-  20% {
-    background-image: url(../../media/img/tiamat.jpg);
-  }
-  40% {
-    background-image: url(../../media/img/rohehuesos.png);
-  }
-  60% {
-    background-image: url(../../media/img/copper.jpg);
-  }
-  80% {
-    background-image: url(../../media/img/dromoka.jpg);
+  97% {
+    background-image: url(../../media/img/teferi.jpg);
   }
   100% {
-    background-image: url(../../media/img/balefire.jpeg);
+    background-image: url(../../media/img/brago.jpg);
   }
 }
 @keyframes urdragon {
   0% {
     background-image: url(../../media/img/urdragon.webp);
   }
+  17% {
+    background-image: url(../../media/img/urdragon.webp);
+  }
   20% {
+    background-image: url(../../media/img/tiamat.jpg);
+  }
+  37% {
     background-image: url(../../media/img/tiamat.jpg);
   }
   40% {
     background-image: url(../../media/img/rohehuesos.png);
   }
+  57% {
+    background-image: url(../../media/img/rohehuesos.png);
+  }
   60% {
+    background-image: url(../../media/img/copper.jpg);
+  }
+  77% {
     background-image: url(../../media/img/copper.jpg);
   }
   80% {
     background-image: url(../../media/img/dromoka.jpg);
   }
-  100% {
-    background-image: url(../../media/img/balefire.jpeg);
+  97% {
+    background-image: url(../../media/img/dromoka.jpg);
   }
-}
-@-webkit-keyframes zoomIn {
-  to {
-    transform: scale(110%);
+  100% {
+    background-image: url(../../media/img/urdragon.webp);
   }
 }
 @keyframes zoomIn {
   to {
     transform: scale(110%);
-  }
-}
-@-webkit-keyframes open {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 296px;
-  }
-}
-@keyframes open {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 296px;
   }
 }
 .azul {
@@ -498,50 +456,34 @@ main section .deck:hover div {
   background-size: 120% 120%;
 }
 main section .deck:first-child a > div {
-  -webkit-animation-name: atraxa;
-          animation-name: atraxa;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: atraxa;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 main section .deck:nth-child(2) {
   margin-left: 10.5vw;
 }
 main section .deck:nth-child(2) a > div {
-  -webkit-animation-name: oloro;
-          animation-name: oloro;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: oloro;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 main section .deck:nth-child(3) a > div {
-  -webkit-animation-name: brago;
-          animation-name: brago;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: brago;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 main section .deck:nth-child(4) {
   margin-left: 10.5vw;
 }
 main section .deck:nth-child(4) a > div {
-  -webkit-animation-name: urdragon;
-          animation-name: urdragon;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: urdragon;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 section > article {
@@ -573,9 +515,11 @@ section > article h1 {
 .container .card {
   position: relative;
   width: 212px;
+  max-width: 212px;
   height: 25px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: 0.4s linear;
   overflow: hidden;
   margin-bottom: 3px;
 }
@@ -599,15 +543,8 @@ section > article h1 {
   transform: translateY(-5px);
 }
 .container .card:has(button:focus) {
+  height: 296px;
   border-radius: 10px;
-  -webkit-animation-name: open;
-          animation-name: open;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .container .card:has(button:focus) img {
   transform: translateY(0);
@@ -630,9 +567,11 @@ section > article h1 {
 #comandante .card {
   position: relative;
   width: 212px;
+  max-width: 212px;
   height: 25px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: 0.4s linear;
   overflow: hidden;
   margin-bottom: 3px;
 }
@@ -656,15 +595,8 @@ section > article h1 {
   transform: translateY(-5px);
 }
 #comandante .card:has(button:focus) {
+  height: 296px;
   border-radius: 10px;
-  -webkit-animation-name: open;
-          animation-name: open;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 #comandante .card:has(button:focus) img {
   transform: translateY(0);
@@ -694,9 +626,11 @@ section > article h1 {
 #coleccion .container .card {
   position: relative;
   width: 212px;
+  max-width: 212px;
   height: 25px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: 0.4s linear;
   overflow: hidden;
   margin-bottom: 3px;
 }
@@ -720,15 +654,8 @@ section > article h1 {
   transform: translateY(-5px);
 }
 #coleccion .container .card:has(button:focus) {
+  height: 296px;
   border-radius: 10px;
-  -webkit-animation-name: open;
-          animation-name: open;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 #coleccion .container .card:has(button:focus) img {
   transform: translateY(0);
