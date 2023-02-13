@@ -290,6 +290,10 @@
   float: right;
 }
 
+.text-black {
+  color: black;
+}
+
 @keyframes atraxa {
   0% {
     background-image: url(../../media/img/atraxa.jpg);
@@ -876,9 +880,6 @@ section > article h1 {
 #comandantes article {
   width: 100%;
   background-color: white;
-}
-#comandantes article p {
-  color: black;
 }
 #comandantes article b {
   position: absolute;
