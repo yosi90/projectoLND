@@ -10,23 +10,23 @@ $('#btnMenu').click(function (e) {
     $('#menu').toggle('slow');
 });
 
-$(".cabeceraCarta").hover(function () {
+$(".cabeceraCarta, #textoCabecera").hover(function () {
     $("#textoCabecera").toggle();
 });
 
-$(".arteCarta").hover(function () {
+$(".arteCarta, #textoArte").hover(function () {
     $("#textoArte").toggle();
 });
 
-$(".tipoCarta").hover(function () {
+$(".tipoCarta, #textoTipo").hover(function () {
     $("#textoTipo").toggle();
 });
 
-$(".reglasCarta").hover(function () {
+$(".reglasCarta, #textoReglas").hover(function () {
     $("#textoReglas").toggle();
 });
 
-$(".estadisticasCarta").hover(function () {
+$(".estadisticasCarta, #textoEstadisticas").hover(function () {
     $("#textoEstadisticas").toggle();
 });
 
