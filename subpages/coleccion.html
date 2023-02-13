@@ -59,6 +59,52 @@
             </ul>
         </aside>
         <section class="align-items-center">
+            <article id="busqueda" class="m-1">
+                <table>
+                    <tr>
+                        <th><h2 class="m-0 mx-1">Filtros:</h2></th>
+                        <th>
+                            <input id="nombre" placeholder="Nombre de la carta...">
+                        </th>
+                        <th>
+                            <label for="tipo" class="ms-1">Tipo de carta:</label>
+                            <select id="tipo">
+                                <option>Criatura</option>
+                                <option>Tierra</option>
+                                <option>Artefacto</option>
+                                <option>Instantáneo</option>
+                                <option>Conjuro</option>
+                                <option>Planeswalker</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="color" class="ms-1">Color:</label>
+                            <select id="color" multiple size="1">
+                                <option>Azul</option>
+                                <option>Blanco</option>
+                                <option>Negro</option>
+                                <option>Rojo</option>
+                                <option>Verde</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="standar" class="ms-1">Estandard</label>
+                            <input name="formato" type="radio" id="standar">
+                        </th>
+                        <th>
+                            <label for="standar" class="ms-1">Legacy</label>
+                            <input name="formato" type="radio" id="standar">
+                        </th>
+                        <th>
+                            <label for="proh" class="ms-1">Prohibida?</label>
+                            <input type="checkbox" id="proh">
+                        </th>
+                        <th>
+                            <input type="submit" value="Buscar" class="mx-1">
+                        </th>
+                    </tr>
+                </table>
+            </article>
             <article id="coleccion">
                 <h1>Cartas en propiedad</h1>
                 <div class="container">

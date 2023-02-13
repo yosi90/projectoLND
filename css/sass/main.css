@@ -282,6 +282,36 @@
   margin-bottom: 0rem;
 }
 
+.mx-5 {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.mx-4 {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.mx-3 {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.mx-2 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.mx-1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.mx-0 {
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
 .float-left {
   float: left;
 }
@@ -615,7 +645,6 @@ main section {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  min-height: 100%;
   color: white;
   box-shadow: 7px 7px 10px inset black;
   moz-overflow: scroll;
@@ -822,7 +851,7 @@ section > article h1 {
 }
 
 #coleccion {
-  height: 60vh;
+  height: 70vh;
 }
 #coleccion .container {
   display: flex;
@@ -875,6 +904,11 @@ section > article h1 {
 }
 #coleccion .container .open {
   height: 100% !important;
+}
+
+#busqueda #nombre {
+  border-radius: 4px;
+  padding: 6px 2px 2px 10px;
 }
 
 #comandantes article {
