@@ -742,168 +742,57 @@ section > article h1 {
   margin: 0;
 }
 
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  max-height: calc(100vh - 300px);
-  color: black;
-  overflow: auto;
-  moz-overflow: scroll;
-  padding: 10px;
-  justify-content: space-around;
-  max-width: 30vw;
-}
-.container .card {
+.card {
   position: relative;
-  width: 212px;
-  max-width: 212px;
-  height: 25px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: 0.4s linear;
-  overflow: hidden;
-  margin-bottom: 3px;
-}
-.container .card button {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 25px;
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(255, 255, 255, 0);
-  border: none;
-  z-index: 2;
-}
-.container .card button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgb(255, 255, 255);
-}
-.container .card img {
-  width: 100%;
-  border-radius: 9px;
-  transform: translateY(-5px);
-}
-.container .card:has(button:focus) {
-  height: 296px;
-  border-radius: 10px;
-}
-.container .card:has(button:focus) img {
-  transform: translateY(0);
-}
-.container .open {
-  height: 100% !important;
+  width: 265px;
+  height: 370px;
+  border-radius: 11px;
 }
 
 #comandante {
   display: flex;
   flex-flow: row wrap;
-  max-height: calc(100vh - 300px);
-  color: black;
-  overflow: auto;
-  moz-overflow: scroll;
-  padding: 10px;
   justify-content: center;
   max-width: 280px;
-  max-height: fit-content;
 }
-#comandante .card {
-  position: relative;
-  width: 212px;
-  max-width: 212px;
-  height: 25px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: 0.4s linear;
-  overflow: hidden;
-  margin-bottom: 3px;
+#comandante img {
+  margin-bottom: 10px;
 }
-#comandante .card button {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 25px;
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(255, 255, 255, 0);
-  border: none;
-  z-index: 2;
+
+#tierras .container, #resto .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 90vw;
+  padding: 10px;
+  padding-top: 325px;
+  max-height: 36vh;
+  max-width: 32vw;
+  overflow: auto;
 }
-#comandante .card button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgb(255, 255, 255);
+#tierras .container img, #resto .container img {
+  margin-top: -320px;
 }
-#comandante .card img {
-  width: 100%;
-  border-radius: 9px;
-  transform: translateY(-5px);
-}
-#comandante .card:has(button:focus) {
-  height: 296px;
-  border-radius: 10px;
-}
-#comandante .card:has(button:focus) img {
-  transform: translateY(0);
-}
-#comandante .open {
-  height: 100% !important;
-}
-#comandante .container {
-  overflow: hidden;
+#tierras .container img:hover, #resto .container img:hover {
+  z-index: 100;
 }
 
 #coleccion {
-  height: 70vh;
+  margin-bottom: 60px;
 }
 #coleccion .container {
   display: flex;
   flex-flow: row wrap;
-  max-height: calc(100vh - 300px);
-  color: black;
-  overflow: auto;
-  moz-overflow: scroll;
-  padding: 10px;
   justify-content: space-around;
   max-width: 90vw;
-  height: calc(100% - 77px);
+  padding: 10px;
+  padding-top: 325px;
 }
-#coleccion .container .card {
-  position: relative;
-  width: 212px;
-  max-width: 212px;
-  height: 25px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: 0.4s linear;
-  overflow: hidden;
-  margin-bottom: 3px;
+#coleccion .container img {
+  margin-top: -320px;
 }
-#coleccion .container .card button {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 25px;
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(255, 255, 255, 0);
-  border: none;
-  z-index: 2;
-}
-#coleccion .container .card button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgb(255, 255, 255);
-}
-#coleccion .container .card img {
-  width: 100%;
-  border-radius: 9px;
-  transform: translateY(-5px);
-}
-#coleccion .container .card:has(button:focus) {
-  height: 296px;
-  border-radius: 10px;
-}
-#coleccion .container .card:has(button:focus) img {
-  transform: translateY(0);
-}
-#coleccion .container .open {
-  height: 100% !important;
+#coleccion .container img:hover {
+  z-index: 100;
 }
 
 #busqueda #nombre {
@@ -1030,12 +919,6 @@ section > article h1 {
 }
 
 @media screen and (max-width: 1450px) {
-  #tierras .card, #resto .card {
-    width: 100%;
-  }
-  main > section:not(#comandantes):not(#desglose) {
-    padding: 40px;
-  }
   main > section:not(#comandantes):not(#desglose) .deck:nth-child(2) {
     margin-left: 2%;
   }
@@ -1090,21 +973,6 @@ section > article h1 {
   main {
     height: calc(100vh - 63.65px);
     margin-top: 63.65px;
-  }
-}
-@media screen and (max-width: 720px) {
-  section > article > .container .card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100% !important;
-    height: 40px;
-  }
-  section > article > .container .card button {
-    height: 40px;
-  }
-  section > article > .container .card img {
-    max-width: 300px;
   }
 }
 @media screen and (max-width: 480px) {

@@ -190,38 +190,42 @@ section > article
         padding: 5px
         margin: 0
 
-.container
-    @include list
+.card
+    position: relative
 
-    justify-content: space-around
+    width: 265px
+    height: 370px
 
-    max-width: 30vw
+    border-radius: 11px
 
 #comandante
-    @include list
-
+    display: flex
+    flex-flow: row wrap
     justify-content: center
 
     max-width: 280px
-    max-height: fit-content
 
+    img
+        margin-bottom: 10px
+
+#tierras, #resto
     .container
-        overflow: hidden
+        @include list
 
-#coleccion
-    height: 70vh
+        max-height: 36vh
+        max-width: 32vw
+
+        overflow: auto
+
+#coleccion 
+    margin-bottom: 60px
 
     .container
         @include list
 
-        justify-content: space-around
-
-        max-width: 90vw
-        height: calc(100% - 77px)
-
 #busqueda #nombre
-        border-radius: 4px
-        padding: 6px 2px 2px 10px
+    border-radius: 4px
+    padding: 6px 2px 2px 10px
 
 #comandantes
     article

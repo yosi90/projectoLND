@@ -56,66 +56,18 @@ $secondaryStrong: #b1b1b1c4
 @mixin list()
     display: flex
     flex-flow: row wrap
+    justify-content: space-around
 
-    max-height: calc( 100vh - 300px )
-
-    color: black
-
-    overflow: auto
-    moz-overflow: scroll
+    max-width: 90vw
 
     padding: 10px
+    padding-top: 325px
 
-    .card
-        position: relative
-        width: 212px
-        max-width: 212px
-        height: 25px
+    img
+        margin-top: -320px
 
-        border-top-left-radius: 10px
-        border-top-right-radius: 10px
-
-        transition: .4s linear
-
-        overflow: hidden
-
-        margin-bottom: 3px
-
-        button
-            position: absolute
-            top: 0
-
-            width: 100%
-            height: 25px
-
-            background-color: rgba(0, 0, 0, 0)
-            color: rgba(255, 255, 255, 0)
-
-            border: none
-
-            z-index: 2
-
-            &:hover
-                background-color: rgba(0, 0, 0, 0.8)
-                color: rgba(255, 255, 255, 1)
-
-        img
-            width: 100%
-
-            border-radius: 9px
-
-            transform: translateY(-5px)
-
-    .card:has(button:focus)
-        height: 296px
-
-        border-radius: 10px
-
-        img
-            transform: translateY(0)
-
-    .open
-        height: 100% !important
+        &:hover
+            z-index: 100
 
 .azul
     background-color: blue
